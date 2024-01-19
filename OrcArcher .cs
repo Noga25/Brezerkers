@@ -1,4 +1,8 @@
-﻿namespace Brezerkers
+﻿//----c# II (Dor Ben Dor) ----
+//       Noga Levkovitz
+//---------------------------
+
+namespace Brezerkers
 {
     public sealed class OrcWarrior : AttackUnit
     {

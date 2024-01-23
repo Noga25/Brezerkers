@@ -4,18 +4,23 @@
 
 namespace Brezerkers
 {
-    public sealed class HumanKnight : RangedUnit
+    public sealed class HumanKnight : AttackUnit
     {
         // Properties
-        protected override int Damage => 10;
-        protected override int HP => 100;
+        protected override int Damage()
+        {
+            DamageRate = 10;
+
+            return DamageRate;
+        }
         protected override Race UnitRace => Race.Human;
         protected override float Range => 20;
 
         // Methods
-        public override void Defend(Unit attacker)
+        public override void Defend(Unit player)
         {
-            // Implementation for defending
+            Defend(player);
+            DefenseRate = 6;
         }
     }
 }

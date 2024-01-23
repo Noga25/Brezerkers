@@ -42,6 +42,6 @@ namespace Brezerkers
 
         // Methods
         public abstract void Attack(Unit target, int targetDistance);
-        public abstract void Defend(Unit attacker);
+        public abstract void Defend(Unit player);
     }
 }

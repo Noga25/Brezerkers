@@ -6,6 +6,8 @@ namespace Brezerkers
 {
     public sealed class ElfWizard : AttackUnit
     {
+        Race race = Race.Elf;
+
         // Properties
         protected override float Range => 40;
 

@@ -6,8 +6,9 @@ namespace Brezerkers
 {
     public sealed class OrcWarrior : AttackUnit
     {
-        // Properties
+        Race race = Race.Orc;
 
+        // Properties
         protected override float Range => 10;
         protected override int Damage()
         {

@@ -6,6 +6,8 @@ namespace Brezerkers
 {
     public sealed class HumanKnight : AttackUnit
     {
+        Race race = Race.Human;
+
         // Properties
         protected override int Damage()
         {

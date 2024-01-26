@@ -6,9 +6,8 @@ namespace Brezerkers
 {
     public sealed class ElfWizard : AttackUnit
     {
-        Race race = Race.Elf;
-
         // Properties
+        protected override Race UnitRace => Race.Elf;
         protected override float Range => 40;
 
         protected override int Damage()
@@ -17,8 +16,6 @@ namespace Brezerkers
 
             return DamageRate;
         }
-
-        protected override Race UnitRace => Race.Elf;
 
         // Methods
         public override void Defend(Unit player)

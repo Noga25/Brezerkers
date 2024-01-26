@@ -6,17 +6,16 @@ namespace Brezerkers
 {
     public sealed class HumanKnight : AttackUnit
     {
-        Race race = Race.Human;
-
         // Properties
+        protected override float Range => 20;
+        protected override Race UnitRace => Race.Human;
+
         protected override int Damage()
         {
             DamageRate = 10;
 
             return DamageRate;
         }
-        protected override Race UnitRace => Race.Human;
-        protected override float Range => 20;
 
         // Methods
         public override void Defend(Unit player)

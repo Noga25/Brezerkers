@@ -6,17 +6,16 @@ namespace Brezerkers
 {
     public sealed class OrcWarrior : AttackUnit
     {
-        Race race = Race.Orc;
-
         // Properties
         protected override float Range => 10;
+        protected override Race UnitRace => Race.Orc;
+
         protected override int Damage()
         {
             DamageRate = 10;
 
             return DamageRate;
         }
-        protected override Race UnitRace => Race.Orc;
 
         // Methods
         public override void Defend(Unit player)
